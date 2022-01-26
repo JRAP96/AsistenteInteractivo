@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/jsxgraph.css"/>
+    <script type="text/javascript" src="js/jsxgraphcore.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/claseRaton.js"></script>
+    <title>Asistente Interactivo - raton y queso random</title>
+</head>
+
+<header>
+</header>
+
+<body>
+
+    <nav>
+            <img src="imagenes/ai.jpg" alt="Asistente Interactivo" id="logo">
+            <a href="AIhome.html" class="opciones">Principal</a>
+            <a href="desayuno.html" class="opciones">Capítulo 1</a>
+            <a href="comida.html" class="opciones">Capítulo 2</a>
+            <a href="#" class="opciones">Capítulo 3</a>
+    </nav>
+    <main>
+        <article id='enunciado'>
+            <h2>Última parada, diviertete con Remilo</h2>
+            <p class="textoenun">Finalmente, Remilo ha dejado de viajar sobre el gran río y desembocó en el mar, ahora nuestro intrépido ratoncito se encuentra perdido en un océano de aguas profundas solamente con la ayuda de una rejilla de tubos que se encuentra flotando sobre el agua y un sabroso queso que se encuentra en la misma rejilla. Ayuda a Remilo a comer su queso mientras esperan que un barco lejano se acerque y se pueda trepar.</p>
+        </article>
+        <article id='menu'>
+            <p id="instruc">Instrucciones:</p>
+            <p class="textoart">Dirige al ratón mediante los botones-flechas para que llegue sano y salvo hasta su queso y no muera de hambre. ¿Eres capaz de indicar una trayectoria completa que lo lleve al queso?. Escribela y prueba tu trayectoria.</p>
+        </article>
+        <aside>
+            <div id="div1aside">
+                <h2 id="trayectit">Trayectoria del ratón:</h2>
+                <div id="infoboton">
+                    <p id="ptrayec">Recuerde que cada botón es una instrucción y representa un paso del ratón</p>
+                    <ul>
+                        <li>Arriba: ↑ : A</li>
+                        <li>Abajo: ↓ : B</li>
+                        <li>Derecha: → :D</li>
+                        <li>Izquierda: ← : I</li>
+                    </ul>
+                </div>
+                <label>Su trayectoria es:</label>
+                <p id="trayectoria"></p>
+            </div>
+            <div id="div2aside">
+                <h2 id="trayectit">Pruebe sus trayectorias:</h2>
+                <p id="ptrayec">Ingrese mediante los comandos ABCD la trayectoria del ratón para llegar al queso, valide y espere un poco:</p>
+                <input type="text" id="sutrayectoria">
+                <button id="checar">Validar Trayectoria</button>
+                <p id="resultado"></p>
+            </div>
+        </aside>
+        <section>
+            <div id="juego">
+                <div id="jxgbox" class="jxgbox"></div>
+                <div id='botones'>
+                    <button id='bt' class="boton" title="Indica el lugar donde empieza el ratón">»</button>
+                    <button id='bt1' class="boton">↑</button>
+                    <button id='bt2' class="boton">↓</button>
+                    <button id='bt3' class="boton">→</button>
+                    <button id='bt4' class="boton">←</button>
+                </div>
+            </div>
+            <div id='contenedor'>
+                <marquee behavior="scroll" direction="left" id='espacio' scrolldelay='60'></marquee>
+                <p class="fallo">¿Consiguio llegar al queso?, sino es así pulse el boton y reintente</p>
+                <button class="boton" id="replay"> Nuevo Juego </button>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="js/AI1.js"></script>
+</body>
+
+<footer>
+    <p class="pfooter">Asistente Interactivo - 2022 - DME - PE</p>
+</footer>
+
+</html>

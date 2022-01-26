@@ -1,0 +1,334 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#navegacion{
+    background-image: url(../imagenes/bosque.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    grid-area: nav;
+}
+    ul{
+        padding-top: 40px;
+        margin-right: 20px;
+        text-align: center;
+    }
+    #logo{
+        height: 70px;
+        margin-left: 33%;
+        margin-top: 5%;
+        border-radius: 20px;
+    }
+    li{
+        display: block;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    a{
+        color: blue;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .titulo{
+        font-size: 100px;
+        padding-top: 80px;
+        color: rgb(182, 118, 0);
+        background-color: rgba(0, 255, 255, 0.5);
+    }
+.descrip{
+    background-color: rgba(0, 128, 0, 0.3);
+    font-size: 20px;
+    font-family: cursive;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
+    #historia{
+        color: green;
+        font-size: 30px;
+        font-weight: bold;
+    }
+.contenedorG{
+    display: flex;
+    justify-content: space-evenly;
+}
+    .juegocontenedor{
+        background-color: rgba(0, 0, 255, 0.2);
+        height: auto;
+        width: 700px;
+        border-radius: 20px;
+    }
+        #jxgbox{
+            height: 500px;
+            width: 500px;
+            background: rgb(46,33,138);
+            background: radial-gradient(circle, rgba(46,33,138,0.6587009803921569) 0%, rgba(34,97,230,0.6587009803921569) 17%, rgba(150, 197, 238, 0.709) 61%);
+        }
+        .boton{
+            display: block;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: rgb(208, 230, 238);
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        #bt{
+            background-color: lightcoral;
+            font-size: 30px;
+            color:blue;
+        }
+        #bt:hover{
+            background-color: rgb(106, 204, 240);
+        }
+        .boton:hover{
+            background-color: rgb(106, 204, 240);
+        }
+        #botones{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+        #espacio{
+            font-family: Verdana, Geneva, Tahoma, sans-serif, cursive;
+            font-size: 30px;
+            margin-top: -20px;
+            margin-bottom: -20px;
+            text-shadow: -6px 0px 3px rgba(40, 190, 245, 0.8);
+            background-color: blue;
+        }
+        #juego{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #contenedor{
+            margin-left: 20%;
+            margin-top: 2%;
+            width: 60%;
+            color: white;
+            font: bold 20px 'oswald';
+            -webkit-text-stroke: 1px rgba(255,255,255, 0.8);
+            color: transparent;
+        }
+            .fallo{
+                color: blue;
+                text-align: center;
+                -webkit-text-stroke: 1px rgba(20, 36, 104, 0.8);
+                color: solid;
+                margin-bottom: 10px;
+                margin-top: 15px;
+            }
+            #replay{
+                background-color: rgba(250, 128, 114,0.5);
+                border: 1px red solid;
+                border-radius: 30%;
+                font-size: 15px;
+                margin-left: 35%;
+                width: 150px;
+                height: 25px;
+            }
+            #replay:hover{
+                background-color: rgba(250, 128, 114,0.8);
+            }
+    .info{
+        background-color: aqua;
+        height: auto;
+        width: 400px;
+        border-radius: 15px;
+    }
+        #div1aside{
+            margin: 10px;
+        }
+        #trayectit{
+            text-align: center;
+        }
+        #ptrayec{
+            font-family: cursive;
+        }
+        ul{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        li{
+            font-family: cursive;
+            margin: 0px;
+        }
+        #trayectoria{
+            height: 50px;
+            width: auto;
+            margin: 10px;
+            background-color: beige;
+            text-align: center;
+            font-size: 45px;
+            border-radius: 10px;
+            border: 2px solid green;
+            color: black;
+        }
+            label{
+                color: blue;
+                font-size: 20px;
+                margin-left: 10px;
+            }
+        #resultado{
+            color: black;
+            height: 40px;
+            width: 90%;
+            margin: 10px;
+            margin-top: 0px;
+            text-align: center;
+            font-size: 32px;
+            border-radius: 10px;
+        }
+    #div2aside{
+        margin: 10px;
+    }
+        .conteotexto{
+            font-family: cursive;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .veri1{
+            background-color: rgba(250, 128, 114,0.4);
+            border: 1px red solid;
+            border-radius: 30%;
+            font-size: 15px;
+            width: 100px;
+            height: 25px;
+        }
+        .veri1:hover{
+            background-color: rgba(250, 128, 114,0.8);
+        }
+    form{
+        margin-bottom: 10px;
+    }
+
+.pie{
+    background-color: black;
+    height: 35px;
+    padding: 10px;
+    margin-top: 20px;
+}
+    .pietexto{
+        color: white;
+        font-family: cursive;
+        font-size: 25px;
+        text-align: center;
+    }
+
+@media (max-width:1024px) {
+    .titulo{
+        font-size: 80px;
+    }
+    #logo{
+        margin-left: 28%;
+    }
+}
+@media (max-width:768px) {
+    .titulo{
+        font-size: 60px;
+        padding-top: 140px;
+        background-color: rgba(0, 255, 255, 0.1);
+    }
+    #logo{
+        margin-left: 23%;
+    }
+    .contenedorG{
+        flex-direction: column;
+        align-items: center;
+    }
+    .info{
+        margin-top: 10px;
+        width: 700px;
+        display: flex;
+    }
+    #div1aside{
+        padding-right: 5px;
+        width: 380px;
+        border-right: 1px green solid;
+    }
+    label{
+        font-size: 16px;
+    }
+}
+@media (max-width:425px) {
+    #logo{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .titulo{
+        font-size: 60px;
+        padding-top: 60px;
+        background-color: rgba(0, 255, 255, 0.3);
+    }
+    .juegocontenedor{
+        height: auto;
+        width: 95%;
+        border-radius: 20px;
+    }
+    .info{
+        width: 95%;
+        flex-direction: column;
+    }
+    #div1aside{
+        border-right: none;
+        border-bottom: 1px green solid;
+        padding-right: 0px;
+    }
+    #replay{
+        margin-left: 20%;
+    }
+}
+@media (max-width:375px) {
+    .titulo{
+        font-size: 40px;
+        padding-top: 30px;
+        background-color: rgba(0, 255, 255, 0.3);
+        color:black;
+    }
+    .descrip{
+        font-size: 16px;
+    }
+    .juegocontenedor{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+        flex-direction: column;
+    }
+    #trayectoria{
+        width: 85%;
+    }
+}
+@media (max-width:320px) {
+    .descrip{
+        font-size: 15px;
+        margin: 5px;
+    }
+    .juegocontenedor{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+        flex-direction: column;
+    }
+    #trayectit{
+        width: 75%;
+        font-size: 20px;
+    }
+    #ptrayec{
+        width: 75%;
+    }
+    #opc{
+        width: 75%;
+    }
+    #trayectoria{
+        width: 70%;
+    }
+    #replay{
+        margin-left: 10%;
+    }
+}

@@ -1,0 +1,298 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.contenedor{
+    background-color: #D3DEDC;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,lfr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    "nav nav nav" 
+    "header header header" 
+    "section section section"
+    "imagen2 imagen2 article" 
+    "footer footer footer";
+}
+ul{
+    padding-top: 40px;
+    margin-right: 20px;
+    text-align: right;
+}
+#logo{
+    height: 40px;
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
+#navegacion{
+    background-image: url(../imagenes/montana.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    grid-area: nav;
+}
+.flower2{
+    width: 900px;
+    height: auto;
+    margin-left: 20px;
+    grid-area: imagen2;
+    border: 2px rgb(130, 200, 200) solid;
+    border-radius: 20px;
+}
+header{
+    grid-area: header;
+    height: auto;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    border-bottom: 2px white solid;
+}
+    .titulo{
+        padding-top: 1%;
+        padding-left: 1%;
+        font-size: 40px;
+        color: rgb(65, 46, 46);
+        color: blue;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+section{
+    grid-area: section;
+    color: whitesmoke;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-top: 2px black solid;
+    padding-top: 20px;
+}
+    h2{
+        color: black;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #parr1{
+        margin: 20px;
+        color: black;
+        font-family: cursive;
+    }
+    #jxgbox{
+        height: 550px;
+        width: 550px;
+        background: rgb(46,33,138);
+        background: radial-gradient(circle, rgba(46,33,138,0.6587009803921569) 0%, rgba(34,97,230,0.6587009803921569) 17%, rgba(150, 197, 238, 0.709) 61%);
+    }
+    .boton{
+        display: block;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: rgb(208, 230, 238);
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    #bt{
+        background-color: lightcoral;
+        font-size: 30px;
+        color:blue;
+    }
+    #bt:hover{
+        background-color: rgb(106, 204, 240);
+    }
+    .boton:hover{
+        background-color: rgb(106, 204, 240);
+    }
+    #botones{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    #espacio{
+        font-family: Verdana, Geneva, Tahoma, sans-serif, cursive;
+        font-size: 30px;
+        margin-top: -20px;
+        margin-bottom: -20px;
+        text-shadow: -6px 0px 3px rgba(40, 190, 245, 0.8);
+        background-color: blue;
+    }
+    #juego{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #contenedor{
+        margin-left: 20%;
+        margin-top: 2%;
+        width: 60%;
+        color: white;
+        font: bold 20px 'oswald';
+        -webkit-text-stroke: 1px rgba(255,255,255, 0.8);
+        color: transparent;
+    }
+        .fallo{
+            color: blue;
+            text-align: center;
+            -webkit-text-stroke: 1px rgba(20, 36, 104, 0.8);
+            color: solid;
+            margin-bottom: 10px;
+        }
+        #replay{
+            background-color: rgba(250, 128, 114,0.5);
+            border: 1px red solid;
+            border-radius: 30%;
+            font-size: 15px;
+            margin-left: 35%;
+            width: 150px;
+            height: 25px;
+        }
+        #replay:hover{
+            background-color: rgba(250, 128, 114,0.8);
+        }
+
+article{
+    grid-area: article;
+    width: 350px;
+    color: whitesmoke;
+    margin-right: 20px;
+    border-top: 2px white solid;
+    padding-top: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+    #ptrayec{
+        font-size: 20px;
+        padding: 5px;
+        color: black;
+    }
+    #opc{
+        padding-top: 10px;
+        height: 120px;
+        width: 150px;
+    }
+    li{
+        font-size: 20px;
+        color: black;
+    }
+    #trayectoria{
+        height: 50px;
+        width: auto;
+        margin: 10px;
+        background-color: beige;
+        text-align: center;
+        font-size: 45px;
+        border-radius: 10px;
+        border: 2px solid green;
+        color: black;
+    }
+        label{
+            color: blue;
+            font-size: 20px;
+            margin-left: 10px;
+        }
+    #resultado{
+        color: black;
+        height: 40px;
+        width: 90%;
+        margin: 10px;
+        margin-top: 0px;
+        text-align: center;
+        font-size: 35px;
+        border-radius: 10px;
+    }
+footer{
+    grid-area: footer;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 50px;
+}
+    .final{
+        color: whitesmoke;
+        text-align: center;
+        margin-top: 10px;
+    }
+    @media (max-width:1024px){
+        .contenedor{
+            width: 100%;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(3,lfr);
+            grid-template-rows: repeat(7, auto);
+            grid-template-areas: 
+            "nav nav nav" 
+            "header header header" 
+            "imagen imagen imagen"
+            "section section section"
+            "article article article"
+            "imagen2 imagen2 imagen2"
+            "footer footer footer";
+        }
+        section{
+            border: none;
+            margin-left: 20px;
+            padding-top: 5px;
+            padding-bottom: 0px;
+        }
+            h2{
+                text-align: center;
+            }
+        article{
+            border: none;
+            margin-left: 35%;
+            padding-top: 5px;
+            padding-bottom: 30px;
+        }
+        .flower2{
+            width: 90%;
+            margin-left: 5%;
+        }
+        #logo{
+            margin-left: 10%;
+        }
+    }
+    @media (max-width:768px) {
+        section{
+            padding-bottom: 0px;
+        }
+        article{
+            margin-left: 10%;
+            padding-bottom: 0px;
+        }
+        #contenedor{
+            width: 600px;
+            margin-left: 8%;
+        }
+        #logo{
+            margin-left: 3%;
+        }
+    }
+    @media (max-width:450px) {
+        .contenedor{
+            background-color: white;
+            width: 100%;
+            display: grid;
+            grid-gap: 5px;
+        }
+        header{
+            height: 200px;
+        }
+        li{
+            display: block;
+        }
+        a{
+            font-size: 18px;
+        }
+        ul{
+            padding-top: 20px;
+        }
+    }

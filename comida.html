@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/jsxgraph.css"/>
+    <script type="text/javascript" src="js/jsxgraphcore.js"></script>
+    <link rel="stylesheet" href="css/comidaestilos.css">
+    <script src="js/claseRaton.js"></script>
+    <title>Su comida de Remilo - Capítulo 2</title>
+</head>
+<body>
+    <nav id="navegacion">
+        <img src="imagenes/ai.jpg" alt="Asistente Interactivo" id="logo">
+        <ul>
+            <li><a href="AIhome.html">Principal</a></li>
+            <li><a href="desayuno.html">Capítulo 1</a></li>
+            <li><a href="#">Capítulo 2</a></li>
+            <li><a href="AIpag5x5.html">Capítulo 3</a></li>
+        </ul>
+        <p class="titulo">La comida de Remilo - Cap. 2</p>
+    </nav>
+    <p class="descrip">
+        <span id="historia">Historia:</span> Gracias por ayudar a Remilo a conseguir su queso de desayuno. Lamentablemente, Remilo es muy ambicioso y más lejos de su casa observo otro pedazo de sabroso queso pero estaba sobre una malla de plástico que había dejado un escalador, cuando iba rumbo a su queso se desprendió la malla del piso congelado y lamentablemente cayo con Remilo y el queso a un rio que va cuesta abajo pasando por un largo viaje que le llevará toda el día cruzar. Ayuda a Remilo a comer su queso mientras termina el río. Pero cuidado si Remilo cae se puede ahogar.
+    </p>
+    <div class="contenedorG">
+        <div class="juegocontenedor">
+            <div id="juego">
+                <div id="jxgbox" class="jxgbox"></div>
+                <div id='botones'>
+                    <button id='bt' class="boton" title="Indica el lugar donde empieza el ratón">»</button>
+                    <button id='bt1' class="boton">↑</button>
+                    <button id='bt2' class="boton">↓</button>
+                    <button id='bt3' class="boton">→</button>
+                    <button id='bt4' class="boton">←</button>
+                </div>
+            </div>
+            <div id='contenedor'>
+                <marquee behavior="scroll" direction="left" id='espacio' scrolldelay='60'></marquee>
+                <p class="fallo">¿Consiguio llegar al queso?, sino es así pulse el boton y reintente</p>
+                <button class="boton" id="replay"> Nuevo Juego </button>
+            </div>
+        </div>
+        <div class="info">
+            <div id="div1aside">
+                <h2 id="trayectit">Primero ayuda a Remilo con esta parte</h2>
+                <div id="infoboton">
+                    <p id="ptrayec">Recuerde que cada botón es una instrucción y representa un paso del ratón</p>
+                    <ul id="opc">
+                        <li>Arriba: ↑ : A</li>
+                        <li>Abajo: ↓ : B</li>
+                        <li>Derecha: → :D</li>
+                        <li>Izquierda: ← : I</li>
+                    </ul>
+                </div>
+                <label>Se muestra la trayectoria de Remilo:</label>
+                <p id="trayectoria"></p>
+                <p id="resultado"></p>
+            </div>
+            <div id="div2aside">
+                <p class="conteotexto">¿Cuántos pasos dio Remilo?</p>
+                <form name="opciones">
+                    <label id="V1"></label>
+                    <input type="radio" name="dos" value="uno" id="uno"><br>
+                    <label id="V2"></label>
+                    <input type="radio" name="dos" value="dos" id="dos"><br>
+                    <label id="V3"></label>
+                    <input type="radio" name="dos" value="tres" id="tres"><br>
+                    <button type="button" id="veri1" class="veri1">Verificar</button>
+                    <label id="res"></label>
+                </form>
+                <p class="conteotexto">¿Cuáles son los pasos largos de Remilo?</p>
+                <form name="opciones2">
+                    <label class="V12">Los pasos A y B</label>
+                    <input type="radio" name="bueno" value="bueno" id="bueno"><br>
+                    <label class="V12">Los pasos D e I</label>
+                    <input type="radio" name="bueno" value="erroneo" id="erroneo"><br>
+                    <button type="button" id="veri2" class="veri1">Verificar</button><br>
+                    <label id="res2"></label>
+                </form>
+                <p class="conteotexto">¿Cuántos pasos cortos dio Remilo?</p>
+                <form name="opciones3">
+                    <label id="V13"></label>
+                    <input type="radio" name="dos3" value="uno3" id="uno3"><br>
+                    <label id="V23"></label>
+                    <input type="radio" name="dos3" value="dos3" id="dos3"><br>
+                    <label id="V33"></label>
+                    <input type="radio" name="dos3" value="tres3" id="tres3"><br>
+                    <button type="button" id="veri3" class="veri1">Verificar</button><br>
+                    <label id="res3"></label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="pie">
+        <p class="pietexto">Asistente Interactivo - DME - PE</p>
+    </footer>
+    <script src="js/comida.js"></script>
+</body>
+</html>

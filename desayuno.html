@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/jsxgraph.css"/>
+    <script type="text/javascript" src="js/jsxgraphcore.js"></script>
+    <link rel="stylesheet" href="css/desayunosestilos.css">
+    <script src="js/claseRaton.js"></script>
+    <title>Remilo y su desayuno</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <nav id="navegacion">
+            <img src="imagenes/ai.jpg" alt="Asistente Interactivo" id="logo">
+            <ul>
+                <li><a href="AIhome.html">Principal</a></li>
+                <li><a href="#">Capítulo 1</a></li>
+                <li><a href="comida.html">Capítulo 2</a></li>
+                <li><a href="AIpag5x5.html">Capítulo 3</a></li>
+            </ul>
+        </nav>
+        <header>    
+            <div class="titulo">
+                <h1>Su desayuno - Cap. 1</h1>
+            </div>
+        </header>
+        <section>
+            <h2>Acompaña a Remilo en el primer cápitulo</h2>
+            <p id="parr1">Remilo se ha levantado muy temprano, aún no amanece y era mañana muy fría, porque su estomago le crujía de tanta hambre. El queso estaba justo afuera de su pequeño hogar. Sin embargo, había mucho viento y debe permanecer en el camino sino puede ser empujado por el viento al oscuro abismo.</p>
+        </section>
+        <div class="flower2">
+            <div id="juego">
+                <div id="jxgbox" class="jxgbox"></div>
+                <div id='botones'>
+                    <button id='bt' class="boton" title="Indica el lugar donde empieza el ratón">»</button>
+                    <button id='bt1' class="boton">↑</button>
+                    <button id='bt2' class="boton">↓</button>
+                    <button id='bt3' class="boton">→</button>
+                    <button id='bt4' class="boton">←</button>
+                </div>
+            </div>
+            <div id='contenedor'>
+                <marquee behavior="scroll" direction="left" id='espacio' scrolldelay='60'></marquee>
+                <p class="fallo">¿Consiguio llegar al queso?, sino es así pulse el boton y reintente</p>
+                <button class="boton" id="replay"> Nuevo Juego </button>
+            </div>
+        </div>
+        <article>
+            <div id="div1aside">
+                <h2 id="trayectit">Trayectoria del ratón:</h2>
+                <div id="infoboton">
+                    <p id="ptrayec">Recuerde que cada botón es una instrucción y representa un paso del ratón</p>
+                    <ul id="opc">
+                        <li>Arriba: ↑ : A</li>
+                        <li>Abajo: ↓ : B</li>
+                        <li>Derecha: → :D</li>
+                        <li>Izquierda: ← : I</li>
+                    </ul>
+                </div>
+                <label>Su trayectoria es:</label>
+                <p id="trayectoria"></p>
+                <p id="resultado"></p>
+            </div>
+        </article>
+        <footer><h2 class="final">Asistente Interactivo - Primera Etapa</h2></footer>
+    </div>
+    <script type="text/javascript" src="js/desayuno.js"></script>
+</body>
+
+</html>

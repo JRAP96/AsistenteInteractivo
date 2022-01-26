@@ -1,0 +1,234 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    width: 100%;
+    height: 350px;
+    border-bottom: 3px white solid;
+    background-image: url(../imagenes/mountains.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    h1{
+        text-align: center;
+        font-size: 50px;
+        color: blue;
+        background-color: none;
+    }
+    ul{
+        padding-top: 25px;
+        margin-right: 20px;
+        margin-left: 20%;
+        text-align: right;
+    }
+    li{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    #asistente{
+        height: 70px;
+        border-radius: 20px;
+    }
+    nav{
+        width: 100%;
+        height: 85px;
+        font-size: 30px;
+        display: flex;
+    }
+.conteG{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: #51C4D3;
+}
+    .subconte{
+        display: flex;
+    }
+.problem{
+    width: 700px;
+    height: 500px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+    #alAsistente1{
+        margin: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 20px;
+        border-top: 2px green solid;
+        border-bottom: 2px green solid;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    h3{
+        text-align: center;
+        color: blue;
+        margin-left: 15px;
+        margin-top: 15px;
+        font-size: 30px;
+    }
+    #raton{
+        color: blue;
+        margin-left: 20px;
+        font-size: 25px;
+    }
+    #pn{
+        height: 380px;
+        margin-left: 20px;
+    }
+    #instruc{
+        width: 150px;
+        font-weight: bold;
+        padding-top: 30px;
+    }
+    #info2{
+        margin-top: 50px;
+    }
+    .infotexto{
+        margin: 10px;
+        font-size: 20px;
+        font-family: cursive;
+    }
+        #tit{
+            color: #3768ca;
+        }
+.descrip{
+    width: 400px;
+    height: 500px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+    #formopc{
+        margin-left: 30%;
+        margin-top: 20px;
+    }
+    label{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .veri11{
+        background-color: rgba(250, 128, 114,0.4);
+        border: 1px red solid;
+        border-radius: 30%;
+        font-size: 20px;
+        width: 100px;
+        height: 30px;
+        margin-top: 20px;
+    }
+    .veri1:hover{
+        background-color: rgba(250, 128, 114,0.8);
+    }
+    #res{
+        color: green;
+        margin-top: 20px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+footer{
+    background-color: rgba(217, 96, 152, 1);
+    text-align: center;
+    height: 50px;
+    font-size: 30px;
+    border-top: 3px white solid;
+}
+h4{
+    color: black;
+    padding-top: 10px;
+}
+
+@media (max-width:768px) {
+    a{
+        color: rgb(102, 255, 0);
+    }
+    aside{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #info2{
+        margin-top: 0px;
+    }
+    #instruc{
+        width: 150px;
+        font-weight: bold;
+        padding-top: 0px;
+    }
+    .infotexto{
+        font-size: 17px;
+    }
+    #formopc{
+        margin-left: 25px;
+    }
+    #res{
+        font-size: 25px;
+    }
+}
+@media (max-width:480px) {
+    #asistente{
+        height: 20px;
+        margin-top: 10px;
+    }
+    li{
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+        a{
+            color: rgb(88, 255, 68);
+        }
+    ul{
+        text-align: center;
+        margin-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 5px;
+    }
+    header{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    h1{
+        font-size: 40px;
+        padding-top: 30px;
+    }
+    nav{
+        flex-direction: column;
+        height: 210px;
+    }
+    footer{
+        font-size: 22px;
+    }
+    .conteG{
+        flex-direction: column;
+        width: 100%;
+    }
+    .problem{
+        width: 100%;
+    }
+    .descrip{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .subconte{
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+    }
+    #pn{
+        margin-left: 60px;
+    }
+}
+@media (max-width:320px) {
+    a{
+        font-size: 15px;
+    }
+    footer{
+        font-size: 18px;
+    }
+}
