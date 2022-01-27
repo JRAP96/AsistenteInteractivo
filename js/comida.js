@@ -56,9 +56,9 @@ barriba.addEventListener('click',
             V1.innerText=`${erroneo1}`;
             V2.innerText=`${pasoTotal}`;
             V3.innerText=`${erroneo2}`;
-            V1.innerText=`${pasoTotal}`;
-            V2.innerText=`${erroneo13}`;
-            V3.innerText=`${erroneo23}`;
+            V13.innerText=`${pasoCorto}`;
+            V23.innerText=`${erroneo13}`;
+            V33.innerText=`${erroneo23}`;
                 veri1.addEventListener('click',()=> {
                     if(document.getElementById('uno').checked) {
                         res.innerText=`Erroneo, piense en otro`;

@@ -81,7 +81,7 @@ function leerAlg() {
     }
     // Hacemos el arreglo de instrucciones del algoritmo
     let arrAlg=Alg.split('');
-    console.log(arrAlg);
+    //console.log(arrAlg);
 
     // Vamos a crear 4 promesas que cuando se resuelven nos generan el paso del raton
     const promesa = new Promise((resolve) => {
